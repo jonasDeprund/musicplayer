@@ -1,3 +1,4 @@
+// Imports
 import React, { useRef, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -35,8 +36,8 @@ const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
   }
   // State
   const [songInfo, setSongInfo] = useState({
-    currentTime: null,
-    duration: null,
+    currentTime: 0,
+    duration: 0,
   })
   return (
     <div className="player">
