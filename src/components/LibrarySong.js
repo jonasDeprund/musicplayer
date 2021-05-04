@@ -27,7 +27,7 @@ const LibrarySong = ({
         }
       }
     })
-    audioRef.current.play()
+    setSongs(newSongs)
     // Check if the song is isPlaying
     if (isPlaying) {
       const playPromise = audioRef.current.play()
